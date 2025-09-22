@@ -1,0 +1,71 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e0f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bae6fd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7dd3fc;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#a5f3fc;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#oceanGradient)"/>
+
+  <!-- Wave decoration at bottom -->
+  <path d="M0,350 Q200,320 400,350 T800,350 L800,450 L0,450 Z" fill="url(#waveGradient)"/>
+
+  <!-- Main content area -->
+  <rect x="50" y="50" width="700" height="280" fill="white" rx="12" stroke="#7dd3fc" stroke-width="2" opacity="0.95"/>
+
+  <!-- Title -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0c4a6e">
+    🌊 Ocean Waves Theme
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#0369a1" font-style="italic">
+    Perfect for Marine Research Presentations
+  </text>
+
+  <!-- Feature boxes -->
+  <rect x="80" y="160" width="150" height="80" fill="#f0f9ff" rx="8" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="155" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Soft Pastels</text>
+  <text x="155" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Sky blue gradients</text>
+  <text x="155" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Ocean motifs</text>
+
+  <rect x="250" y="160" width="150" height="80" fill="#f0f9ff" rx="8" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="325" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Professional</text>
+  <text x="325" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Clean typography</text>
+  <text x="325" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Data visualization</text>
+
+  <rect x="420" y="160" width="150" height="80" fill="#f0f9ff" rx="8" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="495" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Collaborative</text>
+  <text x="495" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Team sharing</text>
+  <text x="495" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Real-time editing</text>
+
+  <rect x="590" y="160" width="150" height="80" fill="#f0f9ff" rx="8" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="665" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Marine Focus</text>
+  <text x="665" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Research optimized</text>
+  <text x="665" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">Environmental themes</text>
+
+  <!-- Sample slide preview -->
+  <rect x="80" y="260" width="640" height="50" fill="#ffffff" rx="6" stroke="#a5f3fc" stroke-width="1"/>
+  <circle cx="110" cy="275" r="3" fill="#0ea5e9"/>
+  <text x="125" y="280" font-family="Arial, sans-serif" font-size="14" fill="#1e293b">Fishing Operations & MCP Zone Analysis</text>
+  <circle cx="110" cy="295" r="3" fill="#0ea5e9"/>
+  <text x="125" y="300" font-family="Arial, sans-serif" font-size="14" fill="#1e293b">150+ operations analyzed with ocean-themed styling</text>
+
+  <!-- Bottom decoration -->
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0369a1" font-weight="bold">
+    Ready for Canva Collaboration
+  </text>
+
+  <!-- Corner wave accent -->
+  <path d="M0,0 Q50,30 100,0 L100,50 Q50,20 0,50 Z" fill="#7dd3fc" opacity="0.2"/>
+  <path d="M700,0 Q750,30 800,0 L800,50 Q750,20 700,50 Z" fill="#7dd3fc" opacity="0.2"/>
+</svg>

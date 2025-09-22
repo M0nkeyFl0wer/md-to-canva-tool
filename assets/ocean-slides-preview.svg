@@ -1,0 +1,234 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ocean gradients -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="50%" style="stop-color:#e0f2fe"/>
+      <stop offset="100%" style="stop-color:#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="slideGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f9ff"/>
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7dd3fc;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#a5f3fc;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0c4a6e">
+    🌊 Ocean Theme: Fishing Operations Analysis Preview
+  </text>
+
+  <!-- Title Slide -->
+  <g transform="translate(50, 80)">
+    <rect width="340" height="200" fill="url(#titleGradient)" rx="12" stroke="#7dd3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 1 - TITLE</text>
+
+    <!-- Wave decoration -->
+    <path d="M0,160 Q85,140 170,160 T340,160 L340,200 L0,200 Z" fill="url(#waveGradient)"/>
+
+    <text x="170" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0c4a6e">
+      Fishing Operations &amp;
+    </text>
+    <text x="170" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0c4a6e">
+      MCP Zone Analysis
+    </text>
+    <text x="170" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0369a1" font-style="italic">
+      Marine Conservation Impact Assessment
+    </text>
+  </g>
+
+  <!-- Executive Summary Slide -->
+  <g transform="translate(410, 80)">
+    <rect width="340" height="200" fill="url(#slideGradient)" rx="12" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 2 - EXECUTIVE SUMMARY</text>
+
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Executive Summary</text>
+
+    <!-- Stats cards -->
+    <rect x="30" y="75" width="70" height="35" fill="#f0f9ff" rx="4" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="65" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0ea5e9">150+</text>
+    <text x="65" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#334155">Operations</text>
+
+    <rect x="110" y="75" width="70" height="35" fill="#f0f9ff" rx="4" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="145" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0ea5e9">$100M+</text>
+    <text x="145" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#334155">Revenue</text>
+
+    <rect x="190" y="75" width="70" height="35" fill="#f0f9ff" rx="4" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="225" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0ea5e9">1,500+</text>
+    <text x="225" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#334155">Jobs</text>
+
+    <!-- Bullet points -->
+    <circle cx="35" cy="130" r="2" fill="#0ea5e9"/>
+    <text x="45" y="135" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">Major industrial overlaps identified</text>
+    <circle cx="35" cy="145" r="2" fill="#0ea5e9"/>
+    <text x="45" y="150" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">Critical infrastructure impacts mapped</text>
+    <circle cx="35" cy="160" r="2" fill="#0ea5e9"/>
+    <text x="45" y="165" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">Comprehensive stakeholder analysis</text>
+    <circle cx="35" cy="175" r="2" fill="#0ea5e9"/>
+    <text x="45" y="180" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">Team collaboration framework ready</text>
+  </g>
+
+  <!-- Geographic Impact Slide -->
+  <g transform="translate(770, 80)">
+    <rect width="340" height="200" fill="url(#slideGradient)" rx="12" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 3 - GEOGRAPHIC IMPACT</text>
+
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Geographic Impact Zones</text>
+
+    <!-- Map representation -->
+    <rect x="30" y="75" width="130" height="80" fill="#e0f2fe" rx="6" stroke="#7dd3fc" stroke-width="2"/>
+    <text x="95" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0369a1">Central Coast</text>
+    <text x="95" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">Zones 100-124</text>
+    <rect x="40" y="115" width="20" height="15" fill="#0ea5e9" rx="2"/>
+    <text x="65" y="125" font-family="Arial, sans-serif" font-size="8" fill="#334155">15+ salmon farms</text>
+    <rect x="40" y="135" width="15" height="10" fill="#7dd3fc" rx="1"/>
+    <text x="60" y="142" font-family="Arial, sans-serif" font-size="8" fill="#334155">500+ jobs</text>
+
+    <rect x="180" y="75" width="130" height="80" fill="#e0f2fe" rx="6" stroke="#7dd3fc" stroke-width="2"/>
+    <text x="245" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0369a1">North Coast</text>
+    <text x="245" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">Zones 300-333</text>
+    <rect x="190" y="115" width="20" height="15" fill="#0ea5e9" rx="2"/>
+    <text x="215" y="125" font-family="Arial, sans-serif" font-size="8" fill="#334155">35+ charters</text>
+    <rect x="190" y="135" width="15" height="10" fill="#7dd3fc" rx="1"/>
+    <text x="210" y="142" font-family="Arial, sans-serif" font-size="8" fill="#334155">200+ seasonal</text>
+
+    <!-- Bottom highlight -->
+    <rect x="30" y="170" width="280" height="20" fill="#f0f9ff" rx="4" stroke="#a5f3fc" stroke-width="1"/>
+    <text x="170" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e" font-weight="bold">
+      Real-time collaboration enabled for team editing
+    </text>
+  </g>
+
+  <!-- Major Operations Slide -->
+  <g transform="translate(50, 320)">
+    <rect width="340" height="200" fill="url(#slideGradient)" rx="12" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 4 - MAJOR OPERATIONS</text>
+
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Major Industrial Operations</text>
+
+    <!-- Company highlight box -->
+    <rect x="30" y="75" width="280" height="70" fill="#f0f9ff" rx="6" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="170" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">🏭 Mowi Canada West</text>
+    <text x="170" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">World's largest salmon farmer</text>
+
+    <circle cx="50" cy="125" r="2" fill="#0ea5e9"/>
+    <text x="60" y="130" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">37 seawater sites, 7 hatcheries</text>
+    <circle cx="50" cy="135" r="2" fill="#0ea5e9"/>
+    <text x="60" y="140" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">1,000+ employees in BC operations</text>
+
+    <!-- Coordinates -->
+    <rect x="30" y="155" width="280" height="25" fill="#e0f2fe" rx="4" stroke="#a5f3fc" stroke-width="1"/>
+    <text x="40" y="170" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0c4a6e">Key Facilities:</text>
+    <text x="110" y="170" font-family="Arial, sans-serif" font-size="8" fill="#334155">Kid Bay: 52.80°N, 128.40°W</text>
+    <text x="230" y="170" font-family="Arial, sans-serif" font-size="8" fill="#334155">Goat Cove: 52.79°N</text>
+  </g>
+
+  <!-- Economic Impact Slide -->
+  <g transform="translate(410, 320)">
+    <rect width="340" height="200" fill="url(#slideGradient)" rx="12" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 5 - ECONOMIC IMPACT</text>
+
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Economic Impact Assessment</text>
+
+    <!-- Statistics grid -->
+    <rect x="30" y="75" width="130" height="45" fill="#f0f9ff" rx="4" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="95" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0c4a6e">💰 Direct Effects</text>
+    <text x="45" y="105" font-family="Arial, sans-serif" font-size="8" fill="#334155">$100M+ annual revenue</text>
+    <text x="45" y="115" font-family="Arial, sans-serif" font-size="8" fill="#334155">1,500+ direct jobs</text>
+
+    <rect x="180" y="75" width="130" height="45" fill="#f0f9ff" rx="4" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="245" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0c4a6e">🏘️ Community</text>
+    <text x="195" y="105" font-family="Arial, sans-serif" font-size="8" fill="#334155">Remote economies</text>
+    <text x="195" y="115" font-family="Arial, sans-serif" font-size="8" fill="#334155">Indigenous opportunities</text>
+
+    <!-- Chart representation -->
+    <rect x="30" y="135" width="280" height="50" fill="#ffffff" rx="4" stroke="#a5f3fc" stroke-width="1"/>
+    <text x="170" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">📊 Impact Distribution</text>
+    <rect x="50" y="160" width="40" height="15" fill="#0ea5e9" rx="2"/>
+    <rect x="100" y="165" width="30" height="10" fill="#7dd3fc" rx="1"/>
+    <rect x="140" y="162" width="35" height="13" fill="#a5f3fc" rx="1"/>
+    <rect x="185" y="160" width="45" height="15" fill="#0ea5e9" rx="2"/>
+    <rect x="240" y="167" width="25" height="8" fill="#7dd3fc" rx="1"/>
+  </g>
+
+  <!-- Recommendations Slide -->
+  <g transform="translate(770, 320)">
+    <rect width="340" height="200" fill="url(#slideGradient)" rx="12" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SLIDE 6 - RECOMMENDATIONS</text>
+
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Recommendations</text>
+
+    <!-- Action items box -->
+    <rect x="30" y="75" width="280" height="55" fill="#f0f9ff" rx="6" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="170" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0c4a6e">⚡ Immediate Actions</text>
+
+    <circle cx="45" cy="105" r="2" fill="#0ea5e9"/>
+    <text x="55" y="110" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">Comprehensive stakeholder consultation</text>
+    <circle cx="45" cy="115" r="2" fill="#0ea5e9"/>
+    <text x="55" y="120" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">Economic mitigation planning</text>
+
+    <!-- Strategy section -->
+    <text x="30" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">🎯 Long-term Strategy</text>
+    <circle cx="45" cy="165" r="2" fill="#0ea5e9"/>
+    <text x="55" y="170" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">Sustainable fisheries transition</text>
+    <circle cx="45" cy="175" r="2" fill="#0ea5e9"/>
+    <text x="55" y="180" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">Conservation tourism development</text>
+  </g>
+
+  <!-- Features callout -->
+  <g transform="translate(200, 560)">
+    <rect width="800" height="180" fill="#f0f9ff" rx="12" stroke="#7dd3fc" stroke-width="2"/>
+
+    <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0c4a6e">
+      🌊 Ocean Theme Features in Action
+    </text>
+
+    <!-- Feature highlights -->
+    <g transform="translate(50, 50)">
+      <rect width="160" height="80" fill="white" rx="8" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">Soft Pastels</text>
+      <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Sky blue gradients</text>
+      <text x="80" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Ocean motifs</text>
+      <text x="80" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Wave decorations</text>
+      <text x="80" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0369a1" font-style="italic">Perfect for marine data</text>
+    </g>
+
+    <g transform="translate(230, 50)">
+      <rect width="160" height="80" fill="white" rx="8" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">Professional Layout</text>
+      <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Statistical cards</text>
+      <text x="80" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Clean typography</text>
+      <text x="80" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Data visualization</text>
+      <text x="80" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0369a1" font-style="italic">Research optimized</text>
+    </g>
+
+    <g transform="translate(410, 50)">
+      <rect width="160" height="80" fill="white" rx="8" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">Team Ready</text>
+      <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Automatic sharing</text>
+      <text x="80" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Edit permissions</text>
+      <text x="80" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Real-time collaboration</text>
+      <text x="80" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0369a1" font-style="italic">Instant team access</text>
+    </g>
+
+    <g transform="translate(590, 50)">
+      <rect width="160" height="80" fill="white" rx="8" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">Claude Integration</text>
+      <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">MCP commands</text>
+      <text x="80" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">One-click conversion</text>
+      <text x="80" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#334155">Template selection</text>
+      <text x="80" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0369a1" font-style="italic">Markdown to Canva</text>
+    </g>
+
+    <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0369a1" font-weight="bold">
+      Ready for your team to collaborate in Canva! 🤝
+    </text>
+  </g>
+</svg>

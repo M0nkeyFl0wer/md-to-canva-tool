@@ -1,0 +1,153 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ocean gradient -->
+    <linearGradient id="oceanBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="100%" style="stop-color:#bae6fd"/>
+    </linearGradient>
+    <!-- Professional gradient -->
+    <linearGradient id="professionalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#93c5fd"/>
+    </linearGradient>
+    <!-- Modern gradient -->
+    <linearGradient id="modernBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff"/>
+      <stop offset="100%" style="stop-color:#c7d2fe"/>
+    </linearGradient>
+    <!-- Minimal gradient -->
+    <linearGradient id="minimalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <!-- Research gradient -->
+    <linearGradient id="researchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9"/>
+      <stop offset="100%" style="stop-color:#cbd5e1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1e293b">
+    🎨 Template Gallery - 5 Professional Themes
+  </text>
+
+  <!-- Ocean Pastel Template -->
+  <g transform="translate(50, 80)">
+    <rect width="180" height="120" fill="url(#oceanBg)" rx="8" stroke="#7dd3fc" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">Ocean Pastel</text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0369a1">🌊 Marine Research</text>
+    <rect x="15" y="55" width="150" height="50" fill="white" rx="4" opacity="0.9"/>
+    <circle cx="25" cy="70" r="2" fill="#0ea5e9"/>
+    <line x1="35" y1="70" x2="155" y2="70" stroke="#7dd3fc" stroke-width="1"/>
+    <circle cx="25" cy="85" r="2" fill="#0ea5e9"/>
+    <line x1="35" y1="85" x2="155" y2="85" stroke="#7dd3fc" stroke-width="1"/>
+    <circle cx="25" cy="95" r="2" fill="#0ea5e9"/>
+    <line x1="35" y1="95" x2="120" y2="95" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="90" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Soft blues • Wave motifs</text>
+  </g>
+
+  <!-- Professional Blue Template -->
+  <g transform="translate(250, 80)">
+    <rect width="180" height="120" fill="url(#professionalBg)" rx="8" stroke="#3b82f6" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">Professional Blue</text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2563eb">💼 Business Reports</text>
+    <rect x="15" y="55" width="150" height="50" fill="white" rx="4" opacity="0.9"/>
+    <rect x="25" y="65" width="130" height="8" fill="#3b82f6" rx="2"/>
+    <rect x="25" y="78" width="100" height="6" fill="#93c5fd" rx="1"/>
+    <rect x="25" y="88" width="120" height="6" fill="#93c5fd" rx="1"/>
+    <rect x="25" y="98" width="80" height="6" fill="#93c5fd" rx="1"/>
+    <text x="90" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Corporate • Clean design</text>
+  </g>
+
+  <!-- Modern Gradient Template -->
+  <g transform="translate(450, 80)">
+    <rect width="180" height="120" fill="url(#modernBg)" rx="8" stroke="#6366f1" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4338ca">Modern Gradient</text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b21b6">✨ Tech & Innovation</text>
+    <rect x="15" y="55" width="150" height="50" fill="white" rx="4" opacity="0.9"/>
+    <rect x="25" y="65" width="40" height="35" fill="#6366f1" rx="4" opacity="0.8"/>
+    <rect x="75" y="65" width="80" height="12" fill="#8b5cf6" rx="2"/>
+    <rect x="75" y="82" width="70" height="8" fill="#a78bfa" rx="1"/>
+    <rect x="75" y="95" width="60" height="6" fill="#c4b5fd" rx="1"/>
+    <text x="90" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Bold • Contemporary</text>
+  </g>
+
+  <!-- Minimal Clean Template -->
+  <g transform="translate(650, 80)">
+    <rect width="180" height="120" fill="url(#minimalBg)" rx="8" stroke="#64748b" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Minimal Clean</text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">📝 Academic Focus</text>
+    <rect x="15" y="55" width="150" height="50" fill="white" rx="4" opacity="0.9"/>
+    <line x1="25" y1="70" x2="155" y2="70" stroke="#64748b" stroke-width="2"/>
+    <line x1="25" y1="82" x2="130" y2="82" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="25" y1="90" x2="140" y2="90" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="25" y1="98" x2="110" y2="98" stroke="#94a3b8" stroke-width="1"/>
+    <text x="90" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Simple • Distraction-free</text>
+  </g>
+
+  <!-- Research Report Template -->
+  <g transform="translate(150, 250)">
+    <rect width="180" height="120" fill="url(#researchBg)" rx="8" stroke="#374151" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">Research Report</text>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4b5563">📊 Data Analysis</text>
+    <rect x="15" y="55" width="150" height="50" fill="white" rx="4" opacity="0.9"/>
+    <rect x="25" y="65" width="15" height="25" fill="#3b82f6" rx="1"/>
+    <rect x="45" y="75" width="15" height="15" fill="#60a5fa" rx="1"/>
+    <rect x="65" y="70" width="15" height="20" fill="#93c5fd" rx="1"/>
+    <rect x="85" y="80" width="15" height="10" fill="#bfdbfe" rx="1"/>
+    <line x1="110" y1="70" x2="150" y2="70" stroke="#374151" stroke-width="1"/>
+    <line x1="110" y1="80" x2="140" y2="80" stroke="#6b7280" stroke-width="1"/>
+    <line x1="110" y1="90" x2="145" y2="90" stroke="#6b7280" stroke-width="1"/>
+    <text x="90" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Charts • Academic style</text>
+  </g>
+
+  <!-- Feature comparison section -->
+  <g transform="translate(400, 250)">
+    <rect width="300" height="120" fill="#f8fafc" rx="8" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">✨ All Templates Include</text>
+
+    <text x="30" y="50" font-family="Arial, sans-serif" font-size="12" fill="#475569">🤝 Team collaboration features</text>
+    <text x="30" y="68" font-family="Arial, sans-serif" font-size="12" fill="#475569">📱 Responsive design layouts</text>
+    <text x="30" y="86" font-family="Arial, sans-serif" font-size="12" fill="#475569">🎨 Professional typography</text>
+    <text x="30" y="104" font-family="Arial, sans-serif" font-size="12" fill="#475569">⚡ Claude Code integration</text>
+  </g>
+
+  <!-- Usage statistics -->
+  <g transform="translate(50, 420)">
+    <rect width="900" height="120" fill="#f0f9ff" rx="12" stroke="#7dd3fc" stroke-width="2"/>
+    <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0c4a6e">🚀 Ready for Production Use</text>
+
+    <g transform="translate(100, 50)">
+      <rect width="140" height="50" fill="white" rx="6" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="70" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0ea5e9">5</text>
+      <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#334155">Templates</text>
+    </g>
+
+    <g transform="translate(280, 50)">
+      <rect width="140" height="50" fill="white" rx="6" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="70" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0ea5e9">4</text>
+      <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#334155">MCP Commands</text>
+    </g>
+
+    <g transform="translate(460, 50)">
+      <rect width="140" height="50" fill="white" rx="6" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="70" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0ea5e9">∞</text>
+      <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#334155">Presentations</text>
+    </g>
+
+    <g transform="translate(640, 50)">
+      <rect width="140" height="50" fill="white" rx="6" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="70" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0ea5e9">✓</text>
+      <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#334155">Team Ready</text>
+    </g>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="500" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#64748b" font-style="italic">
+    Choose the perfect template for your presentation needs • Made with 🌊 for professional collaboration
+  </text>
+</svg>
