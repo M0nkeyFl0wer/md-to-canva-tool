@@ -1,0 +1,30 @@
+{
+  "name": "canva-md-converter-app",
+  "version": "0.1.0",
+  "description": "Canva app for markdown to presentation conversion",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack serve --mode=development",
+    "start": "webpack serve --mode=development",
+    "test": "echo 'Tests not implemented yet'",
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "@canva/app-ui-kit": "^4.0.0",
+    "@canva/design": "^1.0.0",
+    "@canva/platform": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.0",
+    "typescript": "^5.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

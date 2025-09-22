@@ -1,0 +1,41 @@
+{
+  "name": "canva-md-converter",
+  "version": "0.1.0",
+  "description": "Convert Markdown files to styled Canva presentations with Claude Code integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspace=mcp-server",
+    "dev:canva": "npm run dev --workspace=canva-app",
+    "dev:mcp": "npm run dev --workspace=mcp-server",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "setup": "npm install && npm run setup --workspaces",
+    "canva:create": "cd canva-app && canva apps create",
+    "canva:preview": "cd canva-app && npm start"
+  },
+  "workspaces": [
+    "canva-app",
+    "mcp-server",
+    "shared"
+  ],
+  "keywords": [
+    "canva",
+    "markdown",
+    "presentations",
+    "mcp",
+    "claude-code",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.0.0"
+  }
+}

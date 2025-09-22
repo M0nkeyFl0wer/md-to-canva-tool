@@ -1,0 +1,21 @@
+{
+  "name": "canva-md-converter-shared",
+  "version": "0.1.0",
+  "description": "Shared utilities and types for Canva markdown converter",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo 'Tests not implemented yet'",
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+    "typescript": "^5.3.0"
+  }
+}
