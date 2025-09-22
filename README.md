@@ -2,7 +2,7 @@
 
 Convert Markdown files to beautiful, collaborative Canva presentations with Claude Code integration.
 
-![Ocean Waves Theme](https://raw.githubusercontent.com/yourusername/canva-md-converter/main/assets/ocean-theme-preview.png)
+![Ocean Waves Theme](https://raw.githubusercontent.com/M0nkeyFl0wer/md-to-canva-tool/main/assets/ocean-theme-preview.svg)
 
 ## ✨ Features
 
@@ -31,8 +31,8 @@ canva login
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/canva-md-converter.git
-cd canva-md-converter
+git clone https://github.com/M0nkeyFl0wer/md-to-canva-tool.git
+cd md-to-canva-tool
 npm install
 npm run setup
 
@@ -100,13 +100,13 @@ collaboration:
 | `minimal-clean` | Simple, distraction-free design | Academic presentations |
 | `research-report` | Academic style with data visualization | Research findings, studies |
 
-![Template Gallery](https://raw.githubusercontent.com/yourusername/canva-md-converter/main/assets/template-gallery.png)
+![Template Gallery](https://raw.githubusercontent.com/M0nkeyFl0wer/md-to-canva-tool/main/assets/template-gallery.svg)
 
 ## 🌊 Ocean Pastel Theme Preview
 
 Perfect for marine research and environmental presentations:
 
-![Ocean Theme Slides](https://raw.githubusercontent.com/yourusername/canva-md-converter/main/assets/ocean-slides-preview.png)
+![Ocean Theme Slides](https://raw.githubusercontent.com/M0nkeyFl0wer/md-to-canva-tool/main/assets/ocean-slides-preview.svg)
 
 **Features:**
 - Soft blue gradients (#7dd3fc, #a5f3fc, #0ea5e9)
