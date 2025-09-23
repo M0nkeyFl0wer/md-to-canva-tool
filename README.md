@@ -12,6 +12,10 @@ Convert Markdown files to beautiful, collaborative Canva presentations with Clau
 - **📊 Smart Parsing**: Automatically converts markdown structure to slide layouts
 - **🎯 Professional Styling**: Typography, colors, and layouts optimized for presentations
 - **⚡ Real-time Preview**: See exactly how your slides will look before creation
+- **📸 Visual Feedback**: Screenshot designs directly in Claude Code for iterative editing
+- **🎛️ Design Manipulation**: Update colors, text, backgrounds, and layouts via commands
+- **💾 Local Export**: Export finished designs to VS Code projects as PDF, PNG, or PowerPoint
+- **🔄 Iterative Workflow**: Make changes, see results, refine until perfect
 
 ## 🚀 Quick Start
 
@@ -22,9 +26,9 @@ Convert Markdown files to beautiful, collaborative Canva presentations with Clau
 node --version  # v20.10.0+
 npm --version   # v10+
 
-# Install Canva CLI
-npm install -g @canva/cli@latest
-canva login
+# Required for visual feedback and export
+npm install -g playwright@latest
+playwright install chromium
 ```
 
 ### Installation
@@ -44,6 +48,7 @@ claude mcp add canva-md-converter "node" "mcp-server/dist/server.js" -s local
 
 ### Claude Code Commands
 
+#### Basic Conversion
 ```bash
 # Convert markdown to Canva presentation
 convert_markdown_to_canva examples/sample-presentation.md --template=ocean-pastel
@@ -56,6 +61,35 @@ list_templates
 
 # Validate markdown format
 validate_markdown your-file.md
+```
+
+#### Visual Feedback & Iteration
+```bash
+# Login to Canva for visual manipulation
+login_to_canva --email=your@email.com --password=yourpassword
+
+# Screenshot current design for review
+screenshot_canva_design https://canva.com/design/YOUR_DESIGN_ID
+
+# Screenshot specific slide
+screenshot_canva_design https://canva.com/design/YOUR_DESIGN_ID --slideNumber=2
+
+# Make design updates
+update_canva_design https://canva.com/design/YOUR_DESIGN_ID --action=background --value=#0ea5e9
+update_canva_design https://canva.com/design/YOUR_DESIGN_ID --action=text --value="New Title" --target="title"
+update_canva_design https://canva.com/design/YOUR_DESIGN_ID --action=color --value=#ffffff --target="h1"
+```
+
+#### Export to Local Projects
+```bash
+# Export as PDF to VS Code project
+export_canva_design https://canva.com/design/YOUR_DESIGN_ID --outputDir=./my-project --format=pdf
+
+# Export as images for documentation
+export_canva_design https://canva.com/design/YOUR_DESIGN_ID --outputDir=./docs/images --format=png
+
+# Export as PowerPoint for presentations
+export_canva_design https://canva.com/design/YOUR_DESIGN_ID --outputDir=./presentations --format=pptx --quality=high
 ```
 
 ### Example Markdown Format
@@ -115,6 +149,39 @@ Perfect for marine research and environmental presentations:
 - Statistical cards and highlight boxes
 - Clean, research-focused layout
 
+## 🔄 Complete Iterative Workflow
+
+### 1. **Create** → Convert Markdown to Canva
+```bash
+convert_markdown_to_canva my-research.md --template=ocean-pastel
+# → Creates presentation in Canva with team sharing enabled
+```
+
+### 2. **Review** → Screenshot for Visual Feedback
+```bash
+login_to_canva --email=you@company.com --password=yourpass
+screenshot_canva_design https://canva.com/design/ABC123
+# → Shows presentation screenshot directly in Claude Code
+```
+
+### 3. **Refine** → Make Visual Updates
+```bash
+update_canva_design https://canva.com/design/ABC123 --action=background --value=#1e40af
+update_canva_design https://canva.com/design/ABC123 --action=text --value="Updated Title"
+screenshot_canva_design https://canva.com/design/ABC123  # See changes
+```
+
+### 4. **Collaborate** → Team Editing in Canva
+- Co-workers receive notifications and can edit in real-time
+- Make changes directly in Canva editor
+- Use comments and suggestions for feedback
+
+### 5. **Export** → Integrate with Local Projects
+```bash
+export_canva_design https://canva.com/design/ABC123 --outputDir=./project/docs --format=pdf
+# → Creates files ready for VS Code integration
+```
+
 ## 🤝 Collaboration Features
 
 ### Automatic Team Integration
@@ -124,10 +191,12 @@ Perfect for marine research and environmental presentations:
 - **Real-time collaborative editing** in Canva
 - **Comment system** for feedback and reviews
 
-### Workflow Benefits
-- **For Creators**: Quick markdown-to-presentation conversion
-- **For Teams**: Immediate access to professional slides
-- **For Organizations**: Consistent branding and templates
+### Local Development Integration
+- **Export to any directory** for VS Code projects
+- **Multiple formats** (PDF, PNG, JPG, PowerPoint)
+- **Automatic VS Code workspace** creation
+- **Metadata files** with design information
+- **README generation** for project documentation
 
 ## 📁 Project Structure
 
@@ -223,7 +292,8 @@ convert_markdown_to_canva fishing-operations-summary.md \
 ### MCP Server Integration
 - **Protocol**: Model Context Protocol (MCP)
 - **Transport**: stdio for Claude Code integration
-- **Tools**: 4 main commands (convert, preview, list, validate)
+- **Tools**: 8 commands (convert, preview, list, validate, login, screenshot, update, export)
+- **Visual Feedback**: Playwright-powered browser automation
 - **Error Handling**: Comprehensive validation and error reporting
 
 ### Markdown Parser
@@ -270,6 +340,81 @@ npm install
 npm run setup
 ```
 
+## 📋 Complete Workflow Example
+
+Here's a real-world example showing the full iterative design process:
+
+### Scenario: Creating a Marine Research Presentation
+
+```bash
+# 1. Start with markdown file
+cat > marine-analysis.md << 'EOF'
+---
+title: "North Coast Fishing Operations Analysis"
+template: "ocean-pastel"
+collaboration:
+  teamShare: true
+  permissions: "edit"
+  folder: "Marine Research"
+---
+
+# North Coast Analysis
+## Economic Impact Study
+
+---
+
+# Key Findings
+- 150+ fishing operations analyzed
+- $100M+ annual economic impact
+- 1,500+ jobs supported
+- Critical for local communities
+EOF
+
+# 2. Convert to Canva
+convert_markdown_to_canva marine-analysis.md
+# Output: ✅ Created: https://canva.com/design/ABC123...
+
+# 3. Login for visual feedback
+login_to_canva --email=researcher@university.edu --password=securepass
+
+# 4. Review initial design
+screenshot_canva_design https://canva.com/design/ABC123
+# Shows: Ocean theme applied, but title needs adjustment
+
+# 5. Refine the design
+update_canva_design https://canva.com/design/ABC123 --action=text --value="North Coast Fishing: Economic Impact Analysis" --target="title"
+update_canva_design https://canva.com/design/ABC123 --action=background --value=#0c4a6e --slideNumber=1
+
+# 6. Check changes
+screenshot_canva_design https://canva.com/design/ABC123 --slideNumber=1
+# Shows: Improved title and stronger background
+
+# 7. Team collaboration (co-workers edit in Canva)
+# - Marine biologist adds species data
+# - Economist reviews financial figures
+# - Designer polishes visual elements
+
+# 8. Export for university presentation
+export_canva_design https://canva.com/design/ABC123 --outputDir=./research-presentation --format=pdf --quality=high
+# Creates: research-presentation/north_coast_fishing_economic_impact_analysis.pdf
+#         research-presentation/README.md
+#         research-presentation/north_coast_fishing.code-workspace
+
+# 9. Integrate with research project
+code research-presentation/  # Opens in VS Code
+# Files ready for:
+# - University presentation
+# - Research paper figures
+# - Grant application materials
+# - Public policy documents
+```
+
+### Result: Professional Presentation Ready for Multiple Uses
+- **PDF**: High-quality for academic presentations
+- **Workspace**: VS Code integration for further development
+- **Metadata**: Source tracking and version information
+- **Team Access**: Ongoing collaboration in Canva
+
 ## 📈 Roadmap
 
 ### Current Status ✅
@@ -277,6 +422,10 @@ npm run setup
 - [x] Markdown parser with frontmatter support
 - [x] 5 professional templates including ocean theme
 - [x] Team collaboration configuration
+- [x] Visual feedback with Playwright screenshots
+- [x] Iterative design update commands
+- [x] Local export to VS Code projects
+- [x] Multi-format export (PDF, PNG, PowerPoint)
 - [x] Claude Code integration
 - [x] Preview system
 
