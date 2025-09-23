@@ -46,7 +46,7 @@ class CanvaMarkdownServer {
         tools: [
           {
             name: 'convert_markdown_to_canva',
-            description: 'Convert a markdown file to a Canva presentation with collaboration features',
+            description: 'Convert a markdown file to Canva content (presentations, documents, social posts, infographics)',
             inputSchema: {
               type: 'object',
               properties: {
@@ -56,8 +56,13 @@ class CanvaMarkdownServer {
                 },
                 template: {
                   type: 'string',
-                  description: 'Template to use for styling (professional-blue, modern-gradient, minimal-clean, research-report)',
+                  description: 'Template to use for styling (presentation: ocean-pastel, professional-blue, modern-gradient; document: research-paper-a4, business-report-letter; social: instagram-quote-post, linkedin-business-post, twitter-thread-card; infographic: data-infographic-portrait)',
                   default: 'professional-blue'
+                },
+                contentType: {
+                  type: 'string',
+                  enum: ['presentation', 'document', 'social-post', 'infographic', 'report'],
+                  description: 'Type of content to create (auto-detected from template if not specified)'
                 },
                 teamShare: {
                   type: 'boolean',
