@@ -4,6 +4,8 @@ export interface MarkdownContent {
   frontmatter: Record<string, any>;
   content: string;
   slides: Slide[];
+  contentType: 'presentation' | 'document' | 'social-post' | 'infographic' | 'report';
+  dimensions?: CanvasDimensions;
 }
 
 export interface Slide {
@@ -20,6 +22,16 @@ export interface PresentationTemplate {
   canvaTemplateId?: string;
   slides: SlideTemplate[];
   branding: BrandingConfig;
+  contentType: 'presentation' | 'document' | 'social-post' | 'infographic' | 'report';
+  dimensions: CanvasDimensions;
+}
+
+export interface CanvasDimensions {
+  width: number;
+  height: number;
+  aspectRatio: string;
+  format: 'landscape' | 'portrait' | 'square';
+  description: string;
 }
 
 export interface SlideTemplate {

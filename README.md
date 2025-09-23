@@ -49,11 +49,33 @@ claude mcp add canva-md-converter "node" "mcp-server/dist/server.js" -s local
 ### Claude Code Commands
 
 #### Basic Conversion
-```bash
-# Convert markdown to Canva presentation
-convert_markdown_to_canva examples/sample-presentation.md --template=ocean-pastel
 
-# Preview slides before conversion
+**Presentations:**
+```bash
+convert_markdown_to_canva examples/sample-presentation.md --template=ocean-pastel
+convert_markdown_to_canva research-slides.md --template=professional-blue
+```
+
+**Documents:**
+```bash
+convert_markdown_to_canva examples/research-document.md --template=research-paper-a4
+convert_markdown_to_canva business-report.md --template=business-report-letter
+```
+
+**Social Media:**
+```bash
+convert_markdown_to_canva examples/social-media-post.md --template=linkedin-business-post
+convert_markdown_to_canva quote-post.md --template=instagram-quote-post
+```
+
+**Infographics:**
+```bash
+convert_markdown_to_canva examples/infographic-data.md --template=data-infographic-portrait
+```
+
+**Other Commands:**
+```bash
+# Preview before conversion
 preview_markdown_slides your-file.md
 
 # List available templates
@@ -92,8 +114,9 @@ export_canva_design https://canva.com/design/YOUR_DESIGN_ID --outputDir=./docs/i
 export_canva_design https://canva.com/design/YOUR_DESIGN_ID --outputDir=./presentations --format=pptx --quality=high
 ```
 
-### Example Markdown Format
+### Example Markdown Formats
 
+#### Presentation Format
 ```markdown
 ---
 title: "Your Presentation Title"
@@ -110,22 +133,89 @@ collaboration:
 ---
 
 # First Slide
-
 - Bullet point 1
 - Bullet point 2
-- Bullet point 3
 
 ---
 
 # Second Slide
-
 ## Key Points
 - Important information
-- More details
 ```
 
-## 🎨 Available Templates
+#### Document Format
+```markdown
+---
+title: "Research Paper Title"
+template: "research-paper-a4"
+contentType: "document"
+author: "Your Name"
+institution: "Your Institution"
+collaboration:
+  teamShare: true
+  permissions: "comment"
+---
 
+# Abstract
+Your research summary here...
+
+## Introduction
+Document content flows continuously without slide breaks.
+
+### Methodology
+More detailed sections...
+```
+
+#### Social Media Format
+```markdown
+---
+title: "Key Message"
+template: "linkedin-business-post"
+contentType: "social-post"
+platform: "linkedin"
+hashtags: ["#Research", "#MarineConservation"]
+---
+
+# 🌊 Your Key Message
+
+## Supporting details in larger text
+
+**Key statistics:**
+- Bullet points work great
+- Keep it concise and engaging
+
+*Call to action or question for engagement*
+```
+
+#### Infographic Format
+```markdown
+---
+title: "Data Story Title"
+template: "data-infographic-portrait"
+contentType: "infographic"
+---
+
+# Main Headline
+
+## 45%
+### Increase in results
+
+## $15M
+### Economic impact
+
+---
+
+# Section 2
+
+## Key Process Steps
+- Step one
+- Step two
+- Step three
+```
+
+## 🎨 Available Templates & Content Types
+
+### 📊 Presentations (16:9 Slides)
 | Template | Description | Best For |
 |----------|-------------|----------|
 | `ocean-pastel` | Ocean waves with soft blue pastels | Marine research, environmental topics |
@@ -133,6 +223,24 @@ collaboration:
 | `modern-gradient` | Contemporary design with gradients | Tech talks, modern topics |
 | `minimal-clean` | Simple, distraction-free design | Academic presentations |
 | `research-report` | Academic style with data visualization | Research findings, studies |
+
+### 📄 Documents (A4/Letter Format)
+| Template | Description | Best For |
+|----------|-------------|----------|
+| `research-paper-a4` | Academic typography, Times New Roman | Research papers, academic reports |
+| `business-report-letter` | Corporate styling, professional layout | Business documents, proposals |
+
+### 📱 Social Media Posts
+| Template | Dimensions | Platform | Best For |
+|----------|------------|----------|----------|
+| `instagram-quote-post` | 1080x1080 | Instagram | Inspirational quotes, key messages |
+| `linkedin-business-post` | 1200x627 | LinkedIn | Professional insights, business news |
+| `twitter-thread-card` | 1200x675 | Twitter/X | Thread headers, key statistics |
+
+### 📈 Infographics
+| Template | Description | Best For |
+|----------|-------------|----------|
+| `data-infographic-portrait` | Vertical layout for data storytelling | Statistics, research findings, processes |
 
 ![Template Gallery](https://raw.githubusercontent.com/M0nkeyFl0wer/md-to-canva-tool/main/assets/template-gallery.svg)
 
